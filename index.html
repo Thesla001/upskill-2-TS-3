@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Plan | Choose your plan </title>
+        <link rel="stylesheet"
+    href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <main class="pricing-section">
+        <header class="pricing-header">
+            <p class="eyebrow">SIMPLE, TRANPARENT PRICING </p>
+            <h1>Choose the right plan for you </h1>
+            <p class="subtitle">
+                Everything you need to grow, create, and acheive more.
+                Start small or go all in.
+            </p>
+        </header>
+        <section class="pricing-grid"
+        aria-label="Avaliable pricing plans">
+        <!-- Basic Plan-->
+         <article
+        class="pricing-card" data-plan="basic" tabindex="0"
+        arial-label="Basic plan">
+              <header
+              class="card-header">
+              <p class="plan-label">STARTER</p>
+              <h2>Basic</h2>
+              <p class="plan-description">
+                Everything you need to get started with your next big idea.
+              </p>
+            </header>
+
+            <div 
+            class="price-section">
+               <p class="price">
+                <span class="currency">$</span>9
+                <span class="period">/ month</span>
+               </p>    
+               <p class="billing-note">Billed Monthly</p>
+        </div>
+           <div
+           class="features-section">
+        <h3>What's included</h3>
+        <ui class="features-list">
+            <li>1 project</li>
+            <li>Basic analytics</li>
+            <li>Email support</li>
+            <li>5 GB cloud storage</li>
+        </ui>
+    </div>
+    <button class="plan-button" type="button" aria-pressed="false">
+        Choose Basic
+    </button>
+    </article>
+    <!--Pro Plan-->
+    <article class="pricing-card popular selected"
+    data-plan="pro" tabindex="0" aria-label="Pro plan"
+    arial-pressed="true">
+    <span class="popular-badge">MOST POPULAR</span>
+    <header class="card-header">
+        <p class="plan-description">
+            Advanced tools and greater flexibility to help you work 
+            smarter, collaborate effectively, and grow faster.
+        </p>
+    </header>
+         <div class="price-section">
+            <p class="price">
+                <span class="currency">$</span>29
+                <span class="period">/ month</span>
+            </p>
+            <p class="billing-note">Billed monthly</p>
+         </div>
+         <div class="features-section">
+            <h3>Everything in Basic, plus</h3>
+            <ui class="features-list">
+                <li>Unlimited project</li>
+                <li>Advanced analytics</li>
+                <li>Priority email support</li>
+                <li>100 GB cloud storage </li>
+                <li>Team collaboration</li>
+            </ui>
+         </div>
+          <button class="plan-button" type="button" aria-pressed="true">
+            Choose Pro
+          </button>
+       </article>
+       <!--Enterprise Plan-->
+       <article class="pricing-card" data-plan="enterprise" tabindex="0"
+       aria-label="Enterprise plan">
+             <header class="card-header">
+                <p class="plan-label">FOR LARGE TEAMS</p>
+                <h2>Enterprise</h2>
+                <p class="plan-description">
+                    Powerful, customizable solution for organisations 
+                    that need Advanced security, dedicated assistance,
+                    and room to scale 
+                </p>
+             </header>
+             <div class="price-section">
+                <p class="price"><span class="currency">$</span>99
+                    <span class="period">/month</span>
+                </p> 
+                <p class="billed-note">Billed monthly</p>
+             </div>
+             <div class="features-section">
+                <h3>Everything in Pro, plus</h3>
+                <ul class="features-list">
+                    <li>Unlimited projects and team members</li>
+                    <li>Custom report and analytics</li>
+                    <li>Dedicated account manager</li>
+                    <li>Unlimited cloud storage</li>
+                    <li>Advanced security controls</li>
+                    <li>Custom integrations</li>
+                </ul>
+             </div>
+             <button class="plan-button" type="button" aria-pressed="false">
+                Choose Enterprise
+             </button>
+    </article> 
+    </section>
+    <p class="selection-message" id="selection-message" role="status" aria-live="polite">
+        You've selected the pro plan.
+    </p>
+    <footer class="page-footer">
+        <p>Simple plan. Powerful possibilities. </p>
+    </footer>
+    </main>
+    
+</body>
+</html>
